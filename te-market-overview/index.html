@@ -16,12 +16,17 @@
         body {
             width: 100%;
             height: 100%;
+            overflow: hidden;
         }
 
         .tradingview-widget-container {
             width: 100%;
+            height: 100vh;
+        }
+
+        .tradingview-widget-container__widget {
+            width: 100%;
             height: 100%;
-            min-height: 550px;
         }
     </style>
 </head>
@@ -47,8 +52,8 @@
                                     "showSymbolLogo": true,
                                         "backgroundColor": "#ffffff",
                                             "support_host": "https://www.tradingview.com",
-                                                "width": 550,
-                                                    "height": 550,
+                                                "width": "100%",
+                                                    "height": "100%",
                                                         "symbolsGroups": [
                                                             {
                                                                 "name": "Indices",
@@ -78,7 +83,6 @@
                                                                     { "name": "CAPITALCOM:COPPER", "displayName": "Copper" }
                                                                 ]
                                                             },
-                                                            {
                                                             {
                                                                 "name": "Forex",
                                                                 "symbols": [
