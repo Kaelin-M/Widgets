@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Economic Map Widget</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    /* To ensure the widget fills its container */
+    tv-economic-map {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TradingView Widget BEGIN -->
+  <script type="module" src="https://widgets.tradingview-widget.com/w/en/tv-economic-map.js"></script>
+  <tv-economic-map metrics="gdp,ur,gdg,intr,iryy"></tv-economic-map>
+  <!-- TradingView Widget END -->
+
+</body>
+</html>
